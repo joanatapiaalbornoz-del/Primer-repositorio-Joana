@@ -4,8 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* Estilos básicos para el navbar */
+        .navbar {
+            background: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+        }
+        .navbar .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        .navbar .logo {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            .nav-links { display: none; }
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">Mi Proyecto</a>
+                <ul class="nav-links">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Proyectos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+            </div>
+        </nav>
+    </header>
 </body>
 </html>
